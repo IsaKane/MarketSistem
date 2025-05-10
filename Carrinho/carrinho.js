@@ -5,7 +5,7 @@ const confirmacaoModal = document.getElementById('Confirmacao');
 
 // Carrega o carrinho do localStorage ou array vazio se não houver
 const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
-let indiceParaExcluir = null; 
+let indiceParaExcluir = null;  
 
 // Exibe os produtos do carrinho
 function exibirCarrinho() {
