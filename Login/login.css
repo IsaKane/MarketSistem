@@ -5,7 +5,7 @@ body {
   background: linear-gradient(to bottom right, #eef4ff, #ffffff);
   display: flex;
   flex-direction: column;
-  min-height: 100vh; 
+  min-height: 100vh;  
 }
 
 /* Container geral */
