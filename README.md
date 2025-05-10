@@ -53,7 +53,7 @@ MarketSistem/
    ```bash
    git clone https://github.com/IsaKane/MarketSistem.git
    ```
-
+   
 2. Navegue até a pasta do projeto:
    ```bash
    cd MarketSistem
