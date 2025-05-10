@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> 
+<head>
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <title>Market Sistem</title> 
+  <!-- CSS -->
+  <link rel="stylesheet" href="login.css" /> 
+</head>
+<body>
+  <div class="login-container"> 
+    <!-- Texto informativo -->
+    <div class="login-info"> 
+      <h1>Bem-Vindo ao <span>Market Sistem</span></h1>
+      <p>Cadastre e gerencie seus produtos, adicione itens ao carrinho e conclua suas compras com facilidade.</p>
+    </div>
+
+    <!-- Formulário de login -->
+    <div class="form-container"> 
+      <h2>Login</h2>
+      <p>Entre com sua conta para acessar o sistema</p>
+      
+      <!-- Formulário com ID para o JS -->
+      <form id="loginForm"> 
+        <!-- Campo de email -->
+        <label for="email">Email</label> 
+        <input type="email" id="email" required /> 
+ 
+        <!-- Campo de senha -->
+        <label for="senha">Senha</label> 
+        <input type="password" id="senha" required />
+
+        <button type="submit">Entrar</button> 
+
+        <!-- Mensagem de erro ou sucesso serão exibidas -->
+        <p id="mensagem" class="mensagem-oculta"></p>
+      </form>
+
+      <!-- Link para registro -->
+      <p class="link">Ainda não tem uma conta? <a href="../Registro/registro.html">Registre-se</a></p>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>© 2025 Market Sistem.</footer> 
+
+  <!-- JavaScript -->
+  <script src="login.js"></script> 
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Market Sistem</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="carrinho.css" />
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/7.2.96/css/materialdesignicons.min.css" />
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <!-- Link para voltar à página inicial -->
+      <a href="../Index/index.html">
+        <strong class="text-blue">Market</strong> <span class="text-black">Sistem</span>
+      </a>
+    </div>
+    <div class="icon">
+      <!-- Logout -->
+      <a href="../Login/login.html" class="logout">
+        <i class="mdi mdi-logout mdi-24px text-black"></i>
+      </a>
+    </div>
+  </header>
+
+  <div class="content">
+    <!-- Título e botão de voltar -->
+    <div class="title"> 
+      <h1>Carrinho de Compras</h1>
+      <a href="../Index/index.html">
+        <button class="btn-voltar">
+          <i class="mdi mdi-chevron-left"></i> Voltar
+        </button>
+      </a>
+    </div>
+
+    <!-- Área onde os produtos serão exibidos -->
+    <div id="carrinhoContent" class="carrinho-container"></div>
+
+    <!-- Exibição do total e botão para finalizar -->
+    <div class="total">
+      <p><strong>Total:</strong> R$ <span id="totalPreco">0,00</span></p>
+      <button class="btn-finalizar" onclick="finalizarCompra()">Finalizar Compra</button>
+    </div>
+  </div>
+
+  <!-- Confirmação de exclusão de produto -->
+  <div class="confirmacao-excluir" id="Confirmacao">
+    <div class="conteudo-excluir">
+      <p>Tem certeza que deseja remover este produto?</p>
+      <div class="confirmacao-botoes">
+        <button id="confirmarExclusao" class="btn-confirmar">Sim</button>
+        <button id="cancelarExclusao" class="btn-cancelar">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>© 2025 Market Sistem.</footer>
+
+  <!-- JavaScript -->
+  <script src="carrinho.js"></script>
+</body>
+</html>

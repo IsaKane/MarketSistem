@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Market Sistem</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="index.css" />
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/7.2.96/css/materialdesignicons.min.css" />
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="logo">
+      <!-- Link para voltar à página inicial -->
+      <a href="../Index/index.html">
+        <strong class="text-blue">Market</strong> <span class="text-black">Sistem</span>
+      </a>
+    </div>
+    <div class="icon">
+      <!-- Carrinho com contador de itens -->
+      <a href="../Carrinho/carrinho.html" class="btn-carrinho" data-count="1" id="iconeCarrinho">
+        <i class="mdi mdi-cart mdi-24px text-black"></i>
+      </a>
+
+      <!-- Configurações de produtos -->
+      <a href="../Adicionar/adicionar.html">
+        <i class="mdi mdi-cog mdi-24px text-black"></i>
+      </a>
+      <!-- Logout -->
+      <a href="../Login/login.html" class="logout">
+        <i class="mdi mdi-logout mdi-24px text-black"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Conteúdo principal -->
+  <div class="container">
+    <h1 class="titulo-pagina">Produtos Disponíveis</h1>
+    <!-- Produtos exibidos dinamicamente -->
+    <div id="produtosDisponiveis" class="produtos-disponiveis"></div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>© 2025 Market Sistem.</footer>
+
+  <!-- Script da página -->
+  <script src="index.js"></script>
+</body>
+</html>

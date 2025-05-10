@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Market Sistem</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="registro.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Título principal -->
+    <h1 class="logo">Market Sistem</h1>
+    
+    <div class="form-container">
+      <h2>Registro</h2>
+      <p>Crie sua conta para acessar o sistema</p>
+
+      <!-- Formulário de registro -->
+      <form id="registroForm">
+        <!-- Campo de email -->
+        <label for="email">Email</label>
+        <input type="email" id="email" required />
+
+        <!-- Campo de senha -->
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" required />
+
+        <!-- Campo de confirmação de senha -->
+        <label for="confirmar">Confirmar Senha</label>
+        <input type="password" id="confirmar" required />
+
+        <!-- Área para mostrar requisitos de senha -->
+        <div id="requisitosSenha">
+          <button type="button" id="mostrarRequisitos">Ver requisitos da senha</button>
+          <ul id="listaRequisitos" class="requisitos-oculta">
+            <li id="tam">• Pelo menos 5 caracteres</li>
+            <li id="maiuscula">• Pelo menos uma letra maiúscula</li>
+            <li id="minuscula">• Pelo menos uma letra minúscula</li>
+            <li id="numero">• Pelo menos um número</li>
+            <li id="especial">• Pelo menos um caractere especial</li>
+          </ul>
+        </div>
+
+        <!-- Botão para enviar o formulário -->
+        <button type="submit">Registrar</button>
+
+        <!-- Mensagem de erro ou sucesso serão exibidas -->
+        <div id="mensagem" class="mensagem-oculta"></div>
+      </form>
+
+      <!-- Link para página de login -->
+      <p class="link">Já tem uma conta? <a href="../Login/login.html">Faça login</a></p>
+    </div>
+  </div>
+
+  <!-- Rodapé da página -->
+  <footer>© 2025 Market Sistem.</footer>
+
+  <!-- JavaScript -->
+  <script src="registro.js"></script>
+</body>
+</html>

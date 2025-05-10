@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Market Sistem</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="adicionar.css" />
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/7.2.96/css/materialdesignicons.min.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="logo">
+      <!-- Link para voltar à página inicial -->
+      <a href="../Index/index.html"><strong class="text-blue">Market</strong> <span class="text-black">Sistem</span></a>
+    </div>
+    <div class="icon">
+      <!-- Logout -->
+      <a href="../Login/login.html" class="logout">
+        <i class="mdi mdi-logout mdi-24px text-black"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Título e botão de voltar -->
+    <div class="title">
+      <h2>Gerenciamento de Produtos</h2>
+      <a href="../Index/index.html" class="btn-voltar">
+        <i class="mdi mdi-chevron-left seta"></i> Voltar
+      </a>
+    </div>
+
+    <!-- Formulário para cadastrar produto -->
+    <div class="form-container">
+      <h3>Cadastrar Produto</h3>
+      <form id="formProduto">
+        <div class="form-row">
+          <!-- Campo de ID -->
+          <div class="form-group">
+            <label>ID do Produto</label>
+            <input type="text" placeholder="ID" required />
+          </div>
+
+          <!-- Campo de nome -->
+          <div class="form-group">
+            <label>Nome do Produto</label>
+            <input type="text" placeholder="Nome do produto" required />
+          </div>
+
+          <!-- Campo de preço -->
+          <div class="form-group">
+            <label>Preço (R$)</label>
+            <input type="number" step="0.01" placeholder="0.00" required />
+          </div>
+        </div>
+
+        <!-- Campo de imagem -->
+        <div class="form-group">
+          <label>Imagem do Produto</label>
+          <div class="image-upload" onclick="document.getElementById('inputImagem').click()">
+            <input type="file" id="inputImagem" hidden />
+            <div>
+              <span class="mdi mdi-tray-arrow-up mdi-24px"></span>
+              <p>Clique para carregar uma imagem</p>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn-cadastrar">Cadastrar Produto</button>
+      </form>
+
+      <!-- Mensagem de sucesso ou erro -->
+      <div id="mensagem" class="mensagem-oculta"></div>
+    </div>
+
+    <!-- Lista de produtos cadastrados -->
+    <div class="produtos-cadastrados">
+      <h3>Produtos Cadastrados</h3>
+      <!-- Produtos exibidos dinamicamente -->
+      <div class="lista-produto"></div>
+      <p class="mensagem-vazia">
+        <strong>Nenhum produto cadastrado.</strong><br>
+        Adicione produtos utilizando o formulário acima.
+      </p>
+    </div>
+  </div>
+
+  <!-- Confirmação para exclusão de produto -->
+  <div class="confirmacao-excluir" id="Confirmacao">
+    <div class="conteudo-excluir">
+      <p>Tem certeza que deseja excluir este produto?</p>
+      <div class="confirmacao-botoes">
+        <button id="confirmarExclusao" class="btn-confirmar">Sim</button>
+        <button id="cancelarExclusao" class="btn-cancelar">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>© 2025 Market Sistem.</footer>
+
+  <!-- JavaScript -->
+  <script src="adicionar.js"></script>
+</body>
+</html>
