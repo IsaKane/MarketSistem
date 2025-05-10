@@ -1,5 +1,5 @@
 // Pega o elemento onde os produtos serão inseridos
-const produtosDisponiveis = document.getElementById('produtosDisponiveis');
+const produtosDisponiveis = document.getElementById('produtosDisponiveis'); 
 
 // Pega os produtos armazenados no localStorage ou inicia com array vazio
 const produtos = JSON.parse(localStorage.getItem('produtos')) || [];
