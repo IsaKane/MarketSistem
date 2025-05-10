@@ -3,7 +3,7 @@ const mensagemDiv = document.getElementById("mensagem");
 
 // Função para exibir mensagem de erro ou sucesso
 function exibirMensagem(texto, tipo = "erro") {
-  mensagemDiv.textContent = texto;
+  mensagemDiv.textContent = texto; 
   mensagemDiv.className = tipo === "erro" ? "mensagem-erro" : "mensagem-sucesso";
   mensagemDiv.classList.remove("mensagem-oculta");
 
