@@ -5,7 +5,7 @@ const mensagemDiv = document.getElementById("mensagem");
 function exibirMensagem(texto, tipo = 'erro') {
   mensagemDiv.textContent = texto; 
   mensagemDiv.className = tipo === 'erro' ? 'mensagem-erro' : 'mensagem-sucesso';
-  mensagemDiv.classList.remove('mensagem-oculta');
+  mensagemDiv.classList.remove('mensagem-oculta'); 
 
   // Oculta a mensagem após 3 segundos
   setTimeout(() => {
