@@ -1,6 +1,6 @@
 // Seleciona elementos importantes da interface
 const formProduto = document.getElementById('formProduto');
-const inputImagem = document.getElementById('inputImagem');
+const inputImagem = document.getElementById('inputImagem'); 
 const listaProduto = document.querySelector('.lista-produto');
 const mensagemVazia = document.querySelector('.mensagem-vazia');
 const mensagemDiv = document.getElementById('mensagem');
