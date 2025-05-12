@@ -68,7 +68,3 @@ MarketSistem/
 - Este projeto foi desenvolvido para fins de aprendizado.
 - Não possui integração com back-end ou banco de dados real.
 - Interface focada em usabilidade e praticidade.
-
-## 👩‍💻 Desenvolvedora
-
-Feito por **Isadora Kane**  
